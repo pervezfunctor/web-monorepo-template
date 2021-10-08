@@ -1,5 +1,6 @@
 {
-  "version": "0.1.0",
+  "name": "seartipy-core",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,22 +21,23 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "stp-core",
   "author": "Pervez Iqbal",
-  "module": "dist/core.esm.js",
+  "module": "dist/seartipy-core.esm.js",
   "size-limit": [
     {
-      "path": "dist/core.cjs.production.min.js",
+      "path": "dist/seartipy-core.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/core.esm.js",
+      "path": "dist/seartipy-core.esm.js",
       "limit": "10 KB"
     }
   ],
+  "dependencies": {
+    "@types/node": "16.10.3"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "5.0.5",
-    "husky": "7.0.2",
     "size-limit": "5.0.5",
     "tsdx": "0.14.1",
     "tslib": "2.3.1",
