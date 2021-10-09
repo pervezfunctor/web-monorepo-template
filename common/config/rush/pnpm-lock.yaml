@@ -46,7 +46,6 @@ specifiers:
   formik: 2.2.9
   fp-ts: 2.11.4
   framer-motion: 4.1.17
-  husky: 7.0.2
   io-ts: 2.2.16
   io-ts-types: 0.5.16
   jotai: 1.3.8
@@ -116,7 +115,6 @@ dependencies:
   formik: 2.2.9_react@17.0.2
   fp-ts: 2.11.4
   framer-motion: 4.1.17_react-dom@17.0.2+react@17.0.2
-  husky: 7.0.2
   io-ts: 2.2.16_fp-ts@2.11.4
   io-ts-types: 0.5.16_ef9c68d7d368e764ce2e5d5de77ecbb3
   jotai: 1.3.8_react@17.0.2
@@ -8037,6 +8035,16 @@ packages:
 
   /fastify-warning/0.2.0:
     resolution: {integrity: sha512-s1EQguBw/9qtc1p/WTY4eq9WMRIACkj+HTcOIK1in4MV5aFaQC9ZCIt0dJ7pr5bIf4lPpHvAtP2ywpTNgs7hqw==}
+    dev: false
+
+  /fastify-websocket/4.0.0:
+    resolution: {integrity: sha512-XeeE2r4SkkLBp83NZ3BKCEdR6KFPEtiiIAUrvJhsvLJFRCV6BCnF5ZdchZ6ghPQ5rJ1VwcWlajuXHlQWwXX/YQ==}
+    dependencies:
+      fastify-plugin: 3.0.0
+      ws: 8.2.3
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
 
   /fastify/3.22.0:
@@ -16551,6 +16559,19 @@ packages:
       utf-8-validate: 5.0.6
     dev: false
 
+  /ws/8.2.3:
+    resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
+
   /x256/0.0.2:
     resolution: {integrity: sha1-ya8Yh296F1gB1WT+cK2egxd4STQ=}
     engines: {node: '>=0.4.0'}
@@ -16692,7 +16713,7 @@ packages:
     dev: false
 
   file:projects/seartipy-core.tgz:
-    resolution: {integrity: sha512-PFZj0U93QvJKDEUZ3Egq10qf4S9gKmfZ4RQ+VO36upPyl6Snpdhk9R5jbGwTx6iC2iY4tsgid2Hh3a51wDp0Aw==, tarball: file:projects/seartipy-core.tgz}
+    resolution: {integrity: sha512-kYoslUztAKfUSwCXgwK/RWgHNUoSx833L54HQT1MpX33PfMdP7WI4W2pFZvxLNAxy52i2oKTAJMtZaF9h7jo/A==, tarball: file:projects/seartipy-core.tgz}
     name: '@rush-temp/seartipy-core'
     version: 0.0.0
     dependencies:
@@ -16714,7 +16735,7 @@ packages:
     dev: false
 
   file:projects/seartipy-server.tgz:
-    resolution: {integrity: sha512-5QT1wDqKEFlc8T4WNs6b7L9Tq6ZYtAIVdVxoa3TprTfV5b2MWUaDzxfgrdh4Nu1jAHB0RzSUN6F26+u5DNgpGg==, tarball: file:projects/seartipy-server.tgz}
+    resolution: {integrity: sha512-4E0mTvTQsR4So8isIBaJuxVd1WRZsraWoyLyBv361iom2NSMrrcP00cJkQbkNA6Nwyv3CsAQeab05hT3XBA88Q==, tarball: file:projects/seartipy-server.tgz}
     name: '@rush-temp/seartipy-server'
     version: 0.0.0
     dependencies:
@@ -16728,14 +16749,17 @@ packages:
       fastify-plugin: 3.0.0
       fastify-sensible: 3.1.1
       fastify-tsconfig: 1.0.1
+      fastify-websocket: 4.0.0
       tap: 15.0.10_ts-node@10.2.1+typescript@4.4.3
       ts-node: 10.2.1_3b624d72c50530188ff09826d1b48ebf
       typescript: 4.4.3
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
+      - bufferutil
       - flow-remove-types
       - supports-color
+      - utf-8-validate
     dev: false
 
   file:projects/seartipy-spa.tgz:
@@ -16807,7 +16831,7 @@ packages:
     dev: false
 
   file:projects/seartipy-ssr.tgz:
-    resolution: {integrity: sha512-49gAjC9C4UU1ojfEGoRzPB+elQ6dl5xmqFI6SM7R/pizN2jlhxDuHfzWTe8mlkeSFyxX3sSQ5zkm6FjBHhA0JA==, tarball: file:projects/seartipy-ssr.tgz}
+    resolution: {integrity: sha512-I3ZdziSHZFbnsrAmX9ktxzkMZlgypjXV0jKJhiSOTx9jTN4QtLAvzweEf0bgdD3qKCTP/6tCV7o8v6malUINRg==, tarball: file:projects/seartipy-ssr.tgz}
     name: '@rush-temp/seartipy-ssr'
     version: 0.0.0
     dependencies:
