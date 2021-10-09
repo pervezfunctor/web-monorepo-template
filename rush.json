@@ -389,10 +389,6 @@
       "projectFolder": "spa"
     },
     {
-      "packageName": "seartipy-ssr",
-      "projectFolder": "ssr"
-    },
-    {
       "packageName": "seartipy-server",
       "projectFolder": "server"
     }
